@@ -7,6 +7,8 @@ services:
     volumes:
       - ${VOLUME_DATA_PATH}:/root/LiveTalking/data
       - ${VOLUME_MODELS_PATH}:/root/LiveTalking/models
+      - ${VOLUME_SCRIPTS_PATH}:/root/LiveTalking/scripts
+    command: ["/bin/bash", "/root/LiveTalking/scripts/start.sh"]
     deploy:
       resources:
         reservations:
