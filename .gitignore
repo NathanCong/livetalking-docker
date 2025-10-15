@@ -4,3 +4,7 @@
 
 # 忽略 MacOS 系统文件
 .DS_Store
+
+# 忽略模型数据目录
+volumes/data/*
+volumes/models/*
