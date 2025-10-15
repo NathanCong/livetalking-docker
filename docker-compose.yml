@@ -2,7 +2,8 @@ services:
   livetalking:
     image: livetalking-5090:latest
     container_name: livetalking-5090
-    restart: unless-stopped
+    # restart: unless-stopped
+    restart: no
     network_mode: host
     volumes:
       - ${VOLUME_DATA_PATH}:/root/LiveTalking/data
