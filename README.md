@@ -35,3 +35,8 @@ sh ./scripts/stop.sh
 ```bash
 sh ./scripts/restart.sh
 ```
+
+## 查看日誌
+```bash
+sudo docker logs -f livetalking-5090
+```

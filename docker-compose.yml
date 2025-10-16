@@ -4,6 +4,9 @@ services:
     container_name: livetalking-5090
     restart: unless-stopped
     network_mode: host
+    environment:
+      - DOUBAO_APPID=${DOUBAO_APPID}
+      - DOUBAO_TOKEN=${DOUBAO_TOKEN}
     volumes:
       - ${VOLUME_DATA_PATH}:/root/LiveTalking/data
       - ${VOLUME_MODELS_PATH}:/root/LiveTalking/models
